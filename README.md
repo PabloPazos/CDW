@@ -1,2 +1,1 @@
-# CDW
-Curso de diseño web
+# Curso de diseño web
