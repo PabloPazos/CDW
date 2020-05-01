@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fechas de javascript</title>
+</head>
+
+<body>
+    <p id="fecha" class="fecha"></p>
+</body>
+
+<style>
+    p {
+        font-family: Arial, Sans-serif;
+        background: rgb(11, 161, 69);
+        width: 400px;
+        height: 40px;
+        margin: 20px 0;
+    }
+    
+    .fecha {
+        background: #32021f;
+        color: #fff;
+        font-size: 16px;
+        text-decoration: none;
+        padding: 15px 20px;
+        display: inline-block;
+        margin: 0 10px;
+    }
+</style>
+
+<script>
+    var fecha = new Date();
+    document.write(fecha);
+
+    //--------- Con esta función se actualiza en tiempo real cada segundo la fecha.
+    function mostrarTiempo() {
+        var fecha = new Date();
+        var parrafo = document.getElementById('fecha');
+        parrafo.innerHTML = fecha;
+    }
+
+    var intervalo = setInterval(mostrarTiempo, 1000);
+
+
+    //---------------------------------------
+    console.log(fecha.getHours() - 12 + ' Horas ');
+    console.log(fecha.getMinutes() + ' Minutos ');
+    console.log(fecha.getSeconds() + ' Segundos ');
+
+    var semana = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado']
+
+    // console.log(fecha.getDay());
+    console.log('Día: ' + semana[fecha.getDay()]);
+    console.log('Mes: ' + fecha.getMonth());
+    console.log('Año: ' + fecha.getFullYear());
+</script>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Métodos y propiedades para arreglos.</title>
+</head>
+<body>
+	<script>
+		var amigos = ['Cristian', 'Mati', 'Diego', 'Ale', 'Rigo']		
+// ----- Método Length > mostrar la cantidad de elementos del arreglo.
+		// document.write(amigos.length);
+
+// ----- Método Join > concatena los elementos del array con un signo a elección en una línea o variable como abajo.
+		// var cadenaTexto = amigos.join('-');
+		// document.write(amigos.join('-'))
+		// document.write(cadenaTexto);
+
+// ----- Método Pop and Push
+		// amigos.pop(); //Quita el último elemento de un array
+		// amigos.push('Rodri'); //Agrega un elemento al final de un array
+		// console.log(amigos);
+
+// ----- Método Shift y Unshift
+		// amigos.shift(); // Saca el primer elemento del array
+		// amigos.unshift('Oscar'); // Agrega un primer elemento en el array
+		// console.log(amigos);
+
+// ----- Método Concat > Concatena dos arreglos
+		// var amigos2 = ['Fede', 'Eloy', 'Nesto'];
+		// var todosMisAmigos = amigos.concat(amigos2);
+		// console.log(todosMisAmigos);
+
+// ----- Método Sort y Reverse
+		amigos.sort(); //Ordena los elementos del array alfabéticamente. SOLO funciona con cadena de TEXTOS, no en números.
+		amigos.reverse(); //Ordena los elementos del array de forma invertida al alfabeto
+		console.log(amigos);
+	</script>
+</body>
+</html>

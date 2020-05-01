@@ -1,0 +1,21 @@
+.caja {
+	background: #ffaa5a;
+	width: 200px;
+	height: 200px;
+	/*transform: translate(200px, 50px);*/
+	/*transform: scale(1.4, 1.4);*/
+	/*transform: rotate(20deg);*/
+	/*transform: skew(20deg, 0deg);*/
+	transform: translate(200px) scale(1.5, 1.5) rotate(10deg);
+
+/*	A veces se puede necesitar ser escrito así en navegadores muy viejos o versiones viejas*/
+	-moz-transform: translate(200px) scale(1.5, 1.5) rotate(10deg);
+	-webkit-transform: translate(200px) scale(1.5, 1.5) rotate(10deg);
+}
+
+/* Cosas que podemos hacer con transform:
+	Transladar elementos.
+	Escalar elementos.
+	Rotar elementos.
+	Sesgar elementos.
+*/

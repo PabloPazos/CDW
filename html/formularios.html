@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Formularios</title>
+  </head>
+  <body>
+    <form class="" action="index.html" method="post">
+      <label for="nombre">Tu nombre:</label>
+      <input type="text" name="Nombre" id="nombre" placeholder="Nombre:" maxlength="10" size="10" required>
+      <!--A parte de required que obliga a rellenar el campo, está "readonly" que no deja editar el campo y, disabled que desabilita el campo -->
+      <br />
+      <input type="email" name="correo" placeholder="Correo:">
+      <br />
+      <textarea name="mensaje" id="mensaje" placeholder="Mensaje:"></textarea>
+      <br />
+      <label for="pais">País:</label>
+      <select name="pais" id="pais">
+        <option value="argentina">Argentina</option>
+        <option value="mexico">México</option>
+        <option value="españa">España</option>
+      </select>
+      <br />
+      <input type="radio" name="genero" value="hombre" id="hombre"><label for="hombre">Hombre</label>
+      <input type="radio" name="genero" value="mujer" id="mujer"><label for="mujer">Mujer</label>
+      <br />
+      <input type="checkbox" name="terminos" id="terminos"><label for="terminos">Términos y condiciones</label>
+
+      <input type="submit" value="Enviar">
+    </form>
+  </body>
+</html>

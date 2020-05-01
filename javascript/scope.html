@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Scope en JavaScript</title>
+</head>
+<body>
+	<script>
+//--------Las variables pueden ser de 2 tipos: Global y Local.
+
+//--------Variable local: 
+		//Son las que han sido creadas dentro de una función o una función anidada.
+		
+		// function saludo(){
+		// 	var texto = 'Hola mundo';
+		// 	console.log(texto); //Si escribo esta línea fuera de la función para acceder a la variable, me daría error. Son anidadas.
+		// }
+		// saludo();
+		
+		//console.log(texto); > Acá daría error al invocar a la variable porque no está en la función esta acción.
+
+//--------Variable local con funciones anidadas:
+		//El scope funciona por niveles, si no encuentra una variable en el mismo nivel subirá de nivel hacia afuera y buscará.
+		//Si no encuentra subirá otro nivel y así sucesivamente.
+
+		//Si tenemos uan función anidada podemos buscar variables desde dentro hacia afuera, pero desde una función no podemos 
+		//buscar variables hacia adentro de otra función.
+		
+		// function saludo(){
+		// 	var texto = 'Hola mundo';
+		// 	function mensaje(){
+		// 		console.log(texto);
+		// 	}
+
+		// 	mensaje();
+		// }
+		// saludo();
+
+//--------Variable Global
+		//Las variable globales pueden ser accedidas desde cualquier parte del código, incluyendo cualquier función.
+		
+		// var texto = 'Hola mundo';
+		// function saludo(){
+		// 	console.log(texto);
+		// }
+		// saludo();
+
+//--------IMPORTANTE:
+		//Si una variable se declara fuera de una función es global.
+		//Pero las funciones dentro de una variable también pueden ser globales.
+		//Si dentro de la función declaramos una variable mediante la palabra "var" será local.
+		//Pero si no le ponemos "var" será global.
+		
+		// function saludo(){
+		// 	mensaje = 'Hola mundo';
+		// }
+		// saludo();
+		// console.log(mensaje);
+
+//--------Cómo proteger nuestras variables de código de terceros?
+		
+		// (function(){
+		// 	var mensaje = 'Hola mundo';
+		// 	//código
+		// }())
+
+	</script>
+</body>
+</html>

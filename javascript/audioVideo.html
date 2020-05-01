@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Controlando audio y video de html con js.btn-rojo</title>
+</head>
+
+<body>
+    <video id="video" src="media/night-traffic.mp4" width="500" controls>
+        <p>Tu navegador no soporta videos de HTML5, por favor actualízalo.</p>
+    </video><br>
+
+    <audio id="audio" src="media/Toto - Hold the line.mp3" controls>
+        <p>Tu navegador no soporta videos de HTML5, por favor actualízalo.</p>
+    </audio><br>
+
+    <button id="play">Reproducir</button>
+    <button id="pause">Pausar</button>
+
+    <input id="volumen" type="range" value="1" min="0" max="1" step="0.1">
+
+    <script>
+        var video = document.getElementById('video'),
+            audio = document.getElementById('audio'),
+            btnPlay = document.getElementById('play'),
+            btnPause = document.getElementById('pause'),
+            volumen = document.getElementById('volumen');
+
+        btnPlay.addEventListener('click', function() {
+            video.play();
+            audio.play();
+            // document.body.style.background = '#000';
+        });
+
+        btnPause.addEventListener('click', function() {
+            video.pause();
+            audio.pause();
+        })
+
+        volumen.addEventListener('change', function() {
+            audio.volume = volumen.value;
+        });
+
+        // ------ Propiedades // video.curentTime - regresa el tiempo actual en el que va el video 
+        // video.duration - regresa la duración del video 
+        // ideo.ended - regresa si el video ya terminó 
+        //------ Eventos 
+        /* 
+            pause 
+            play 
+        */
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,2 @@
+Son dos trabajos en uno. Cambiar en la línea de "link" css/estilos por css/main.css
+Con eso se pasa de SASS al otro tipo de css.

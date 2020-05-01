@@ -1,0 +1,73 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #f2f2f2;
+	font-family: Arial;
+}
+
+.contenedor {
+	width: 80%;
+	max-width: 700px;
+	height: 500px;
+	background: #212d40;
+	display: flex;
+	flex-direction: row; /*ya aparece predeterminado al poner el comando de arriba, es decir, escribirlo de nuevo seria redundante*/
+	/*flex-direction: row-reverse; invierte la dirección de las cajas o elementos en la página, en vez de 1, 2, 3, etc.. 4, 3, 2, 1*/
+	/*flex-direction: column; pone los elementos en columnas en vez de filas*/
+	/*flex-direction: column-reverse; igual que el row-reverse, pero en columnas*/
+	flex-wrap: wrap; /*cuando los elementos dentro del div no entran en la misma fila por el tamaño de px, en vez de adaptarlos de tamaño, 
+		crea otra fila abajo.*/
+	/*flex-wrap: nowrap; adapta los elementos dentro del div para que se adapten al tamaño de px achicándolos o agrandándolos*/
+	/*flex-wrap: wrap-reverse; crea las filas de abajo hacia arriba. Ej, 5 6 7 8 y abajo 1 2 3 4.*/
+	/*flex-flow: row-wrap; atajo de los dos comandos "flex-direction: row;" y "flex-wrap: wrap;".*/
+	/*justify-content: flex-start; mueve los elementos hacia la izquierda*/
+	/*justify-content: flex-end; mueve los elementos hacia la derecha*/
+	/*justify-content: center; centra los elementos*/
+	justify-content: space-between; /*divide el espacio sobrante entre elementos y los separa a distancias iguales.*/
+	/*justify-content: space-around; igual que el space-between, pero deja un margen al inicio y al final.*/
+	/*align-items: flex-start; deja los elementos cerca de la parte superior del elemento padre, en el top. Siempre en relación al "height"*/
+	/*align-items: flex-end; igual que el flex-start, pero los deja en el bottom*/
+	/*align-items: center; como en los dos anteriores, pero posiciona los elementos en el centro.*/
+	/*align-items: stretch; alarga los elementos hasta el fondo.*/
+	/*align-items: baseline; alínea los elementos en base al texto, no importa el tamaño o dimensones.*/
+	/*align-content: tiene las mismas opciones que align-items(flex-start, flex-end, etc). No puede estar a la vez que align-items. Y 
+	solo sirve cuando hay dos filas de elementos.*/
+}
+
+.caja {
+	width: 100px;
+	height: 100px;
+	background: #f79256;
+	text-align: center;
+	margin: 20px;
+	padding: 20px;
+	font-size: 40px;
+	color: #fff;
+	/*order: 1;*/
+	/*flex-grow: 1; hace que el elemento o los elementos en la fila ocupen todo el espacio a lo ancho, sin contar el margin.*/
+}
+
+/*.uno {
+	order: 3;
+}
+
+.dos {
+	flex-shrink: 0; no deja que la caja se adapte a los tamaños responsive, siempre mantiene la misma cantidad de píxeles.
+	flex-grow: 2; si el elemento caja 1 crece 1px, este elemento caja 2 crece el doble de px. Mantiene la proporción.
+	flex-basis: 200px; == width: 200px;
+	flex: 1 1 auto; el primer "1" equivale al shrink, el siguiente 1 a grow y el auto a basis. Es la forma simple de escribir esas líneas.
+	align-self: auto;
+	align-self: flex-start; deja el elemento en lo más alto del height.
+	align-self: flex-end; deja el elemento en lo más bajo del height.
+	align-self: center; deja el elemento en el medio del contenedor padre.
+	align-self: baseline; alínea en base a la fuente.
+	align-self: stretch; el elemento abarca todo el height. Pero para que funcione tengo que usar "Height: auto;".
+}
+
+.tres {
+	order: 1;
+}*/

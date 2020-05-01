@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Timing</title>
+</head>
+
+<body>
+    <button id="btn-iniciar">Iniciar</button>
+    <button id="btn-iniciar">Detener</button>
+    <script>
+        //--------setTimeout()
+        function saludo() {
+            alert('Hola mundo');
+        }
+
+        //---------Lo que hace esto es settear el setTimeout como en la función de abajo, pero la siguiente línea lo que hace es detectar
+        //---------los setTimeout y no los muestra en pantalla cuando pasa el tiempo.
+        // var tiempo = setTimeout(saludo, 3000);
+        // clearTimeout(tiempo);
+
+        //---------Muestra msj después de 3 segundos de hacer click al botón en nueva pantalla.
+        // document.getElementById('btn-iniciar').addEventListener('click', function() {
+        //     setTimeout(saludo, 3000);
+        // });
+
+        //--------- setInterval()
+        //---------Muestra de forma infinita cada 3 segundos un cartel.
+        // setInterval(saludo, 3000);
+
+        // var intervalo = setInterval(saludo, 3000);
+        // clearInterval(intervalo);
+
+        var intervalo = setInterval(saludo, 3000);
+        document.getElementById('btn-detener').addEventListener('click', function() {
+            clearInterval(intervalo);
+        })
+    </script>
+</body>
+
+</html>
