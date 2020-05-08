@@ -2,8 +2,17 @@
     "cSpell.ignoreWords": [
         "bigoturri",
         "checked",
+        "let",
         "none",
         "posicion",
         "terminos"
+    ],
+    "cSpell.words": [
+        "border",
+        "height",
+        "let",
+        "outer",
+        "ready",
+        "width"
     ]
 }
