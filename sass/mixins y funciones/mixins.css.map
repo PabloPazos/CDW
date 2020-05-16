@@ -1,7 +1,9 @@
 {
-"version": 3,
-"mappings": "AAmCA,OAAO;EACN,UAAU,EAAE,sBAAiB",
-"sources": ["mixins.sass"],
-"names": [],
-"file": "mixins.css"
+    "version": 3,
+    "mappings": "AAmCA,AAAA,OAAO,CAAC;EACP,UAAU,EAAO,sBAAO;CAAQ",
+    "sources": [
+        "mixins.sass"
+    ],
+    "names": [],
+    "file": "mixins.css"
 }

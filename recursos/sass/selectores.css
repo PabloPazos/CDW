@@ -17,10 +17,6 @@ body {
   color: #4d5061;
 }
 
-.articulo p a {
-  color: #f9a03f;
-}
-
 .articulo div {
   text-align: center;
 }
@@ -34,4 +30,4 @@ body {
 .articulo div a:hover {
   text-decoration: underline;
 }
-/*# sourceMappingURL=anidacion.css.map */
+/*# sourceMappingURL=selectores.css.map */

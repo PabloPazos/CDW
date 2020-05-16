@@ -1,9 +1,14 @@
 body {
-  background: #000; }
+  background: #000;
+}
 
 .articulo {
   background: #fff;
   padding: 20px;
-  width: 500px; }
+  width: 500px;
+}
 
+/*OneDrive\Documentos\Curso Diseno Web\sass>sass estilos.sass:estilos.css
+											sass --watch estilos.sass:estilos.css
+ */
 /*# sourceMappingURL=estilos.css.map */
