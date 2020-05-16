@@ -1,16 +1,8 @@
-body {
+.articulo {
   background: #f2f2f2;
 }
 
-.articulo {
-  background: #fff;
-}
-
 .articulo .titulo {
-  color: #000;
-}
-
-.articulo .autor {
   color: #000;
 }
 

@@ -1,1 +1,175 @@
-/* No CSS *//*# sourceMappingURL=estilos.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f2f2f2;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.ad {
+  margin-bottom: 1.25em;
+  text-align: center;
+}
+
+a {
+  color: #5f6ad4;
+}
+
+header .logo {
+  padding-top: 1.25em;
+  padding-bottom: 1.25em;
+}
+
+header .logo a {
+  display: inline-block;
+}
+
+header .redes-sociales {
+  text-align: right;
+  line-height: 5em;
+}
+
+header .redes-sociales a {
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  text-align: center;
+  line-height: 2.5em;
+  display: inline-block;
+  background: navy;
+  color: #fff;
+  margin-left: 1.25em;
+}
+
+header .redes-sociales a.youtube {
+  background: #c05554;
+}
+
+header .redes-sociales a.twitter {
+  background: #55acee;
+}
+
+header .redes-sociales a.twitter {
+  background: #3b5998;
+}
+
+header .menu {
+  background: #5f6ad4;
+  margin-bottom: 1.25em;
+}
+
+header .menu ul {
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+header .menu ul li {
+  float: left;
+  display: inline-block;
+}
+
+header .menu ul li a {
+  color: #fff;
+  display: inline-block;
+  padding: 1em 1.25em;
+  font-size: 0.87em;
+  color: #fff;
+}
+
+header .menu ul li a:hover {
+  text-decoration: none;
+  background: #7780da;
+}
+
+.main .titulo-seccion h3,
+.sidebar .titulo-seccion h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  font-weight: normal;
+  color: #3b3b3b;
+  padding-bottom: 0.62em;
+  border-bottom: 4px solid #48b04d;
+  margin-bottom: 1.25em;
+}
+
+.main .titulo_seccion > div {
+  padding: 0;
+}
+
+.main .posts .post {
+  margin-bottom: 1.875em;
+}
+
+.main .posts .post .contenedor {
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.03);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.03);
+}
+
+.main .posts .post .contenedor .thumb img {
+  width: 100%;
+  vertical-align: top;
+  height: auto;
+}
+
+.main .posts .post .contenedor .info {
+  padding: 1.25em;
+}
+
+.main .posts .post .contenedor .info .titulo {
+  line-height: 1.125em;
+  margin-bottom: 1.25em;
+  font-size: 1.125m;
+  font-weight: bold;
+}
+
+.main .posts .post .contenedor .info .titulo a {
+  color: #3b3b3b;
+}
+
+.main .posts .post .contenedor .info .fecha {
+  color: #909090;
+  font: 0.875em;
+  margin-bottom: 1.25em;
+}
+
+.main .posts .post .contenedor .info .extracto {
+  color: #292929;
+  font-size: 1em;
+  height: 8.125em;
+  max-height: 8.125em;
+  line-height: 1.75em;
+  margin-bottom: 1.25em;
+  overflow: hidden;
+}
+
+.main .posts .post .contenedor .info .extracto:hover {
+  overflow: auto;
+}
+
+.main .posts .post .contenedor .info .categorias ul {
+  list-style: none;
+}
+
+.main .posts .post .contenedor .info .categorias ul li {
+  display: inline-block;
+}
+
+.main .posts .post .contenedor .info .categorias a {
+  color: #909090;
+  font-size: 1em;
+  font-weight: bold;
+  margin-right: 1.25em;
+}
+
+.main .posts .post .contenedor .info .categorias a:hover {
+  color: #5f6ad4;
+  text-decoration: none;
+}
+/*# sourceMappingURL=estilos.css.map */
