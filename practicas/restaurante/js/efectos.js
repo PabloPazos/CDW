@@ -57,4 +57,5 @@ $(document).ready(function() {
             scrollTop: ubicacion - 50
         }, 500);
     });
+
 });
