@@ -25,7 +25,7 @@ $(document).ready(function() {
     }
 
     //Scroll elementos menú
-    let acercaDe = $('#acerca-de').offset().top,
+    var acercaDe = $('#acerca-de').offset().top,
         menu = $('#platillos').offset().top,
         galeria = $('#galeria').offset().top,
         ubicacion = $('#ubicacion').offset().top;
